@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE library SYSTEM "libraryDTD.dtd">
+
+<library>
+    <location>Cairo</location>
+    <description>HELLO WORLD</description>
+    <librarian>Seif</librarian>
+    <books>
+        <book ISBN="1">
+            <title>MY WORLD</title>
+            <author>Seif</author>
+            <preface>OK</preface>
+            <parts>
+                <part title="Intro">
+                    <chapters>
+                        <chapter title="The king">
+                            <summary>lorem ipsum</summary>
+                            <sections>
+                                <section>
+                                    <content> &bookContent; </content>
+                                </section>
+
+                                <section>
+                                    <content>lorem ipsum</content>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+
+                <![CDATA[]]>
+
+                <![CDATA[
+                    HELLO THERE, THIS IS SOME CDATA
+                ]]>
+
+                <part title="Outro">
+                    <chapters>
+                        <chapter title="The Jack">
+                            <summary>lorem ipsum</summary>
+                            <sections>
+                                <section>
+                                    <content>lorem ipsum</content>
+                                </section>
+
+                                <section>
+                                    <content>lorem ipsum</content>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+
+        <book ISBN="2">
+            <title>MY WORLD</title>
+            <author>Seif</author>
+            <preface>OK</preface>
+            <parts>
+                <part title="Whole">
+                    <chapters>
+                        <chapter title="The Universe">
+                            <summary>lorem ipsum</summary>
+                            <sections>
+                                <section>
+                                    <content>lorem ipsum</content>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+
+    </books>
+</library>
+
+<book>
+    <id>1</id>
+    <name>lulu</name>
+
+</book>
