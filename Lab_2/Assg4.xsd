@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:attributeGroup name='bookAttributes'>
+
+        <xs:attribute name="Category" default="fiction">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(science | fiction)"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+        <xs:attribute name="InStock" default="false">
+            <xs:simpleType>
+                <xs:restriction base="xs:boolean">
+                    <xs:pattern value="(true | false)"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+    </xs:attributeGroup>
+
+
+    <xs:element name="Book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string"/>
+                <xs:element name="Author" type="xs:string"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="bookAttributes"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
